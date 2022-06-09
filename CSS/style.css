@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body{    
+    margin: 0;
+    height: 200vh;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 2.5px;
+    overflow-x: hidden;
+}
+
+main{
+    height: 87.5vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12.5vh;
+}
+
+.mainImg{
+    height: 80vh;
+    box-shadow: 0px 28px 34px 0px rgba(0,0,0,0.3);
+    border-radius: 1vw;
+}
+
+.nav{
+    top: 0;
+    transition: 0.5s;
+    position: fixed;
+    height: 12.5vh;
+    width: 100vw;
+    overflow: hidden;
+    background: black; 
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+ul{    
+    width: 60vw;
+    margin-right: 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+li{
+    list-style: none;
+    font-size: 3vh;
+    text-transform: uppercase;
+}
+
+li:hover{
+    color: rgb(247, 101, 48);
+    transition: 0.1s;
+    cursor: pointer;
+    transform: scale(1.1,1.1);
+}
+
+.firstImg{
+    position: absolute;
+    filter: invert(100%);
+    height: 8vh;
+    left: 10vh;
+}
+
+.secondImg{
+    position: absolute;
+    height: 16vh;
+    left: 5vw;
+}
+
+.firstImg,.secondImg:hover{
+    transform: scale(1.1,1.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.nav-scrolled{
+    top: 0;
+    transition: 0.5s;
+    color: black;
+    position: fixed;
+    height: 10vh;
+    width: 100vw;
+    overflow: hidden;
+    background: rgb(255, 255, 255); 
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    border-bottom: 1px solid black;
+}
